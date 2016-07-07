@@ -92,7 +92,7 @@ app.delete('/delete', function(req,res){
 
 //Express and MySQL code should go here//
 
-var port = 3000;
+var PORT = process.env.PORT || 3000;
 app.listen(port, function() {
     console.log("Listening on PORT " + port);
 });
